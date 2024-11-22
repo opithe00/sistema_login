@@ -14,3 +14,4 @@
         <a href="cadastro.php">Cadastrar Usuário</a>    
    </body>
 </html>
+<!-- Comentário --> 

@@ -9,6 +9,7 @@
         <form action="cad.php" method="post">
             <p>Email : <input type="email" name="email"></p>
             <p>Senha : <input type="senha" name="senha"></p>
+            <p>Nome : <input type="text" name="nome"></p>
             <button type="submit">Cadastrar</button>
         </form>
    </body>
