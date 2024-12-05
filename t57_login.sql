@@ -32,7 +32,10 @@ USE `t57_login`;
 CREATE TABLE `usuarios` (
   `id_cliente` int(11) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `senha` varchar(255) NOT NULL
+  `senha` varchar(255) NOT NULL,
+  'navegador' varchar(100) NOT NULL,
+  'Ip' varchar(13) NOT NULL,
+  'Lingua' varchar(10) NOT NULL,
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --

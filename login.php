@@ -6,12 +6,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Limpa o Email e armazena
     $email = htmlspecialchars($_POST['email']);
     $senha = $_POST['senha'];
+    $navegador = $_POST['navegador'];
+    $Ip = $_POST['Ip'];
+    $Lingua = $_POST['Lingua'];
 
     try{
         // Prepara a Instrução SQL para Execução
         $stmt = $conn->prepare("SELECT id_cliente, senha, nome FROM Usuarios where email = :email");
-        
-        $stmt->bindParam(':email',$email);
+        $stmt->bindParam(':email',$Email);
         $stmt->execute();
 
         // Obtém o resultado para trabalhar depois
